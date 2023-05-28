@@ -9,10 +9,10 @@ import { FaceSnap} from '../models/face-snap.model';
 export class FaceSnapComponent implements OnInit {
   @Input () faceSnap! : FaceSnap;
   
- buttonText!: string;
+  buttonText!: string;
 
 
- ngOnInit() {
+  ngOnInit() {
     this.buttonText= 'Oh Snap!';
   }
   onSnap(){

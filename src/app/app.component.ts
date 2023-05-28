@@ -12,26 +12,28 @@ export class AppComponent implements OnInit{
   myLastSnap!:FaceSnap;
 
   ngOnInit(): void {
-    this.mySnap = new FaceSnap( 
-      'Archibale',
-      'mon meilleur ami depuis tout petit!',
-      'https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg',
-      new Date(),
-      0,
-    ); 
-    this.myOtherSnap = new FaceSnap( 
-      'hello kitty',
-      'mon meilleur ami depuis tout petit!',
-      'https://www.pexels.com/fr-fr/photo/brouiller-jouet-macro-miniature-4066273.jpg',
-      new Date(),
-      1,
-    ); 
-    this.myLastSnap = new FaceSnap( 
-      'tchoupi',
-      'mon meilleur ami depuis tout petit!',
-      'https://www.istockphoto.com/photo/cat-with-blue-eyes-looks-at-camera-gm1067347086-285447479?utm_campaign=srp_photos_noresults&utm_content=https%3A%2F%2Fwww.pexels.com%2Fchercher%2Ftchoupi%2F&utm_medium=affiliate&utm_source=pexels&utm_term=tchoupi.jpg',
-      new Date(),
-      2,
-    );  
+    this.mySnap = {
+      title:'Archibale',
+      description:'mon meilleur ami depuis tout petit!',
+      imageUrl:'https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg',
+      createdDate: new Date(),
+      snaps:0,
+      location: 'paris',
+    }; 
+    this.myOtherSnap = {
+      title:'hello kitty',
+      description:'mon meilleur ami depuis dessin depuis longtemps!',
+      imageUrl:'https://unsplash.com/fr/photos/GAhBHu0GJZg.jpg',
+      createdDate: new Date(),
+      snaps :1,
+      location: 'la Montagne',
+    }; 
+    this.myLastSnap = {
+      title:'pepa',
+      description:'mon meilleur !',
+      imageUrl:'https://unsplash.com/fr/photos/pElSkGRA2NU.jpg',
+      createdDate: new Date(),
+      snaps :2,
+    };  
   }
 }
