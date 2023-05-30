@@ -6,12 +6,18 @@ import { FaceSnapComponent } from './face-snap/face-snap.component';
 import { registerLocaleData } from '@angular/common';
 import * as fr from '@angular/common/locales/fr';
 import { FaceSnapListComponent } from './face-snap-list/face-snap-list.component';
+import { HeaderComponent } from './header/header.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
+import { SignleFaceSnapComponent } from './signle-face-snap/signle-face-snap.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FaceSnapComponent,
-    FaceSnapListComponent
+    FaceSnapListComponent,
+    HeaderComponent,
+    LandingPageComponent,
+    SignleFaceSnapComponent
   ],
   imports: [
     BrowserModule
